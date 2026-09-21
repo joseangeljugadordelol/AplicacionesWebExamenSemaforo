@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-image: url("../imagenes/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.contenedor1 {
+    width: 250%;
+    max-width: 900px;
+    margin: 20px 20px 20px 20px;
+    padding: 50px 40px 50px 40px;
+    background: rgb(161, 160, 160,0.7);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contenedor2 {
+    width: 250%;
+    max-width: 900px;
+    margin:20px 20px 20px 20px;
+    padding: 90px 40px 25px 40px;
+    background: rgb(161, 160, 160, 0.7);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+button:nth-child(1) {
+    background: red;
+    color: white;
+}
+button:nth-child(2) {
+    background: yellow;
+    color: black;
+}
+button:nth-child(3) {
+    background: green;
+    color: white;
+}
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+button:active {
+    transform: translateY(0);
+}
+
+/*----------------------------------------------------------------*/
+
+.semaforo {
+    width: 150px;
+    height: 400px;
+    background: #333;
+    border-radius: 20px;
+    padding: 20px;
+    
+    margin-top: 400px;
+    margin-left: -20px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.contenedor-vertical {
+    display: flex;            
+    flex-direction: column;    
+    align-items: center;       
+    justify-content: center;   
+    height: 100vh;             
+}
+
+/*evita que el semaforo se escape de mexico, ojala fuera broma*/
+.contenedor-horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    min-height: 100vh;
+}
+/*----------------------------------------------------------------------------------------------*/
+.luz {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.luz.rojo {
+    background-color: rgb(20, 0, 0);
+}
+
+.luz.amarillo {
+    background-color: rgb(20, 20, 0);
+}
+
+.luz.verde {
+    background-color: rgb(0, 20, 0);
+}
+
+/* Luz encendida */
+.luz.encendida.rojo {
+    background-color: red;
+    box-shadow: 0 0 25px 15px red;
+}
+
+.luz.encendida.amarillo {
+    background-color: yellow;
+    box-shadow: 0 0 25px 15px yellow;
+}
+
+.luz.encendida.verde {
+    background-color: lime;
+    box-shadow: 0 0 25px 25px lime;
+}
