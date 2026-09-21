@@ -2,6 +2,7 @@ const botonrojo = document.getElementById("btnrojo");
 const botonamarrillo = document.getElementById("btnamarrillo");
 const botonverde = document.getElementById("btnverde");
 const botonmisterioso= document.getElementById("btnmisterioso");
+const botondiosito= document.getElementById("btndiosito");
 
 let acumuladorrojo = 0;
 let acumuladoramarrillo = 0;
@@ -68,4 +69,25 @@ botonmisterioso.addEventListener("click", function(){
         return
     }
 
+})
+botondiosito.addEventListener("click", function(){
+
+    const rojo = document.getElementById("tfrojo");
+    const amarrillo = document.getElementById("tfamarrillo");
+    const verde = document.getElementById("tfverde");
+
+    acumuladorrojo= acumuladorrojo + 1;
+    acumuladoramarrillo= acumuladoramarrillo + 1;
+    acumuladorverde= acumuladorverde + 1;
+
+    rojo.textContent = acumuladorrojo;
+    amarrillo.textContent = acumuladoramarrillo;
+    verde.textContent = acumuladorverde;
+
+    acumuladormisterioso = 2;
+
+    luzroja.classList.add("encendida");
+    luzamarilla.classList.add("encendida");
+    luzverde.classList.add("encendida");
+    
 })
