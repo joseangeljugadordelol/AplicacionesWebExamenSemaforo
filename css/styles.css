@@ -7,6 +7,15 @@ body {
     background-size: cover;
     background-position: center;
 }
+body.diosito {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-image: url("../imagenes/fondodiosito.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .contenedor1 {
     width: 250%;
     max-width: 900px;
@@ -79,7 +88,7 @@ button:active {
     transform: translateY(0);
 }
 
-/*----------------------------------------------------------------*/
+
 
 .semaforo {
     width: 150px;
@@ -114,7 +123,7 @@ button:active {
     width: 100%;
     min-height: 100vh;
 }
-/*----------------------------------------------------------------------------------------------*/
+
 .luz {
     width: 100px;
     height: 100px;

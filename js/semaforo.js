@@ -9,7 +9,7 @@ let acumuladoramarrillo = 0;
 let acumuladorverde = 0;
 let acumuladormisterioso = 2;
 
-const diosito = document.querySelector(".luz");
+const diosito = document.querySelector("body");
 
 const luzroja = document.querySelector(".luz.rojo");
 const luzamarilla = document.querySelector(".luz.amarillo");
@@ -24,6 +24,7 @@ botonrojo.addEventListener("click", function(){
     rojo.textContent = acumuladorrojo;
     acumuladormisterioso = 3;
 
+    diosito.classList.remove("diosito");
     luzroja.classList.add("encendida");
     luzamarilla.classList.remove("encendida");
     luzverde.classList.remove("encendida");
@@ -38,6 +39,7 @@ botonamarrillo.addEventListener("click", function(){
     amarrillo.textContent =  acumuladoramarrillo;
     acumuladormisterioso = 2;
 
+    diosito.classList.remove("diosito");
     luzroja.classList.remove("encendida");
     luzamarilla.classList.add("encendida");
     luzverde.classList.remove("encendida");
@@ -51,6 +53,7 @@ botonverde.addEventListener("click", function(){
     verde.textContent = acumuladorverde;
     acumuladormisterioso = 1;
 
+    diosito.classList.remove("diosito");
     luzroja.classList.remove("encendida");
     luzamarilla.classList.remove("encendida");
     luzverde.classList.add("encendida"); 
@@ -89,5 +92,5 @@ botondiosito.addEventListener("click", function(){
     luzroja.classList.add("encendida");
     luzamarilla.classList.add("encendida");
     luzverde.classList.add("encendida");
-    
+    diosito.classList.add("diosito");
 })
