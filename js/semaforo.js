@@ -8,7 +8,7 @@ const botonapagar= document.getElementById("btnapagar");
 let acumuladorrojo = 0;
 let acumuladoramarrillo = 0;
 let acumuladorverde = 0;
-let acumuladormisterioso = 2;
+let acumuladormisterioso = 3;
 
 const diosito = document.querySelector("body");
 const mantenimiento = document.querySelector("body");
@@ -89,7 +89,7 @@ botondiosito.addEventListener("click", function(){
     amarrillo.textContent = acumuladoramarrillo;
     verde.textContent = acumuladorverde;
 
-    acumuladormisterioso = 2;
+    acumuladormisterioso = 3;
     mantenimiento.classList.remove("mantenimiento");
     luzroja.classList.add("encendida");
     luzamarilla.classList.add("encendida");
@@ -104,4 +104,5 @@ botonapagar.addEventListener("click", function(){
     luzamarilla.classList.remove("encendida");
     luzverde.classList.remove("encendida");
     mantenimiento.classList.add("mantenimiento");
+    acumuladormisterioso = 3;
 })
