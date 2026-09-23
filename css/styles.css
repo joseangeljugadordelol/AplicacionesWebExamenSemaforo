@@ -26,8 +26,8 @@ body.mantenimiento {
     background-position: center;
 }
 .contenedor1 {
-    width: 250%;
-    max-width: 900px;
+    width: 500%;
+    max-width: 600px;
     margin: 20px 20px 20px 20px;
     padding: 50px 40px 50px 40px;
     background: rgb(161, 160, 160,0.7);
@@ -39,8 +39,8 @@ body.mantenimiento {
     gap: 15px;
 }
 .contenedor2 {
-    width: 250%;
-    max-width: 900px;
+    width: 500%;
+    max-width: 500px;
     margin:20px 20px 20px 20px;
     padding: 90px 40px 25px 40px;
     background: rgb(161, 160, 160, 0.7);
@@ -100,6 +100,32 @@ button:hover {
 button:active {
     transform: translateY(0);
 }
+#tfcontador {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgb(5, 5, 5);
+}
+#tfrojo {
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0 0 10px red;
+}
+
+#tfamarrillo {
+    color: yellow;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0 0 10px yellow;
+}
+
+#tfverde {
+    color: limegreen;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0 0 10px limegreen;
+}
 
 
 
@@ -110,8 +136,8 @@ button:active {
     border-radius: 20px;
     padding: 20px;
     
-    margin-top: 480px;
-    margin-left: -20px;
+    margin-top: 25px;
+    margin-left: -250px;
     
     display: flex;
     flex-direction: column;
@@ -120,22 +146,13 @@ button:active {
 }
 .contenedor-vertical {
     display: flex;            
-    flex-direction: column;    
+    flex-direction: row;    
     align-items: center;       
     justify-content: center;   
-    height: 100vh;             
+    height: 150vh;             
 }
 
-/*evita que el semaforo se escape de mexico, ojala fuera broma*/
-.contenedor-horizontal {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    width: 100%;
-    min-height: 100vh;
-}
+
 
 .luz {
     width: 100px;
