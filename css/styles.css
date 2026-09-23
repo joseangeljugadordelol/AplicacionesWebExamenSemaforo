@@ -16,6 +16,15 @@ body.diosito {
     background-size: cover;
     background-position: center;
 }
+body.mantenimiento {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-image: url("../imagenes/fondomantenimiento.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .contenedor1 {
     width: 250%;
     max-width: 900px;
@@ -76,6 +85,10 @@ button:nth-child(4) {
     color: white;
 }
 button:nth-child(5) {
+    background: rgb(15, 15, 15);
+    color: rgb(255, 255, 255);
+}
+button:nth-child(6) {
     background: rgb(251, 251, 252);
     color: rgb(0, 0, 0);
     box-shadow: 0 0 25px 15px rgb(255, 255, 253);
